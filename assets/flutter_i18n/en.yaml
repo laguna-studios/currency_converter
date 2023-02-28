@@ -1,0 +1,444 @@
+title: Currency Converter
+like: Like App
+get_pro: Get Pro Version
+contact: Contact
+terms: Terms of Use
+privacy: Privacy Policy
+overview: Quick Overview
+about: About
+refresh: Latest rates from
+searchHint: "Search for currency or country"
+
+termsUrl: "https://seniorlaguna.github.io/currency_calculator/terms_en.html"
+privacyUrl: "https://seniorlaguna.github.io/currency_calculator/terms_en.html"
+contactUrl: "https://seniorlaguna.github.io/contact.html"
+
+country:
+  af: Afghanistan
+  al: Albania
+  dz: Algeria
+  as: American Samoa
+  ad: Andorra
+  ao: Angola
+  ai: Anguilla
+  aq: Antarctica
+  ag: Antigua and Barbuda
+  ar: Argentina
+  am: Armenia
+  aw: Aruba
+  au: Australia
+  at: Austria
+  az: Azerbaijan
+  bs: Bahamas (the)
+  bh: Bahrain
+  bd: Bangladesh
+  bb: Barbados
+  by: Belarus
+  be: Belgium
+  bz: Belize
+  bj: Benin
+  bm: Bermuda
+  bt: Bhutan
+  bo: Bolivia (Plurinational State of)
+  bq: Bonaire, Sint Eustatius and Saba
+  ba: Bosnia and Herzegovina
+  bw: Botswana
+  bv: Bouvet Island
+  br: Brazil
+  io: British Indian Ocean Territory (the)
+  bn: Brunei Darussalam
+  bg: Bulgaria
+  bf: Burkina Faso
+  bi: Burundi
+  cv: Cabo Verde
+  kh: Cambodia
+  cm: Cameroon
+  ca: Canada
+  ky: Cayman Islands (the)
+  cf: Central African Republic (the)
+  td: Chad
+  cl: Chile
+  cn: China
+  cx: Christmas Island
+  cc: Cocos (Keeling) Islands (the)
+  co: Colombia
+  km: Comoros (the)
+  cd: Congo (the Democratic Republic of the)
+  cg: Congo (the)
+  ck: Cook Islands (the)
+  cr: Costa Rica
+  hr: Croatia
+  cu: Cuba
+  cw: Curaçao
+  cy: Cyprus
+  cz: Czechia
+  ci: Côte d'Ivoire
+  dk: Denmark
+  dj: Djibouti
+  dm: Dominica
+  do: Dominican Republic (the)
+  ec: Ecuador
+  eg: Egypt
+  sv: El Salvador
+  gq: Equatorial Guinea
+  er: Eritrea
+  ee: Estonia
+  sz: Eswatini
+  et: Ethiopia
+  fk: Falkland Islands (the) [Malvinas]
+  fo: Faroe Islands (the)
+  fj: Fiji
+  fi: Finland
+  fr: France
+  gf: French Guiana
+  pf: French Polynesia
+  tf: French Southern Territories (the)
+  ga: Gabon
+  gm: Gambia (the)
+  ge: Georgia
+  de: Germany
+  gh: Ghana
+  gi: Gibraltar
+  gr: Greece
+  gl: Greenland
+  gd: Grenada
+  gp: Guadeloupe
+  gu: Guam
+  gt: Guatemala
+  gg: Guernsey
+  gn: Guinea
+  gw: Guinea-Bissau
+  gy: Guyana
+  ht: Haiti
+  hm: Heard Island and McDonald Islands
+  va: Holy See (the)
+  hn: Honduras
+  hk: Hong Kong
+  hu: Hungary
+  is: Iceland
+  in: India
+  id: Indonesia
+  ir: Iran (Islamic Republic of)
+  iq: Iraq
+  ie: Ireland
+  im: Isle of Man
+  il: Israel
+  it: Italy
+  jm: Jamaica
+  jp: Japan
+  je: Jersey
+  jo: Jordan
+  kz: Kazakhstan
+  ke: Kenya
+  ki: Kiribati
+  kp: Korea (the Democratic People's Republic of)
+  kr: Korea (the Republic of)
+  kw: Kuwait
+  kg: Kyrgyzstan
+  la: Lao People's Democratic Republic (the)
+  lv: Latvia
+  lb: Lebanon
+  ls: Lesotho
+  lr: Liberia
+  ly: Libya
+  li: Liechtenstein
+  lt: Lithuania
+  lu: Luxembourg
+  mo: Macao
+  mg: Madagascar
+  mw: Malawi
+  my: Malaysia
+  mv: Maldives
+  ml: Mali
+  mt: Malta
+  mh: Marshall Islands (the)
+  mq: Martinique
+  mr: Mauritania
+  mu: Mauritius
+  yt: Mayotte
+  mx: Mexico
+  fm: Micronesia (Federated States of)
+  md: Moldova (the Republic of)
+  mc: Monaco
+  mn: Mongolia
+  me: Montenegro
+  ms: Montserrat
+  ma: Morocco
+  mz: Mozambique
+  mm: Myanmar
+  na: Namibia
+  nr: Nauru
+  np: Nepal
+  nl: Netherlands (the)
+  nc: New Caledonia
+  nz: New Zealand
+  ni: Nicaragua
+  ne: Niger (the)
+  ng: Nigeria
+  nu: Niue
+  nf: Norfolk Island
+  mp: Northern Mariana Islands (the)
+  no: Norway
+  om: Oman
+  pk: Pakistan
+  pw: Palau
+  ps: Palestine, State of
+  pa: Panama
+  pg: Papua New Guinea
+  py: Paraguay
+  pe: Peru
+  ph: Philippines (the)
+  pn: Pitcairn
+  pl: Poland
+  pt: Portugal
+  pr: Puerto Rico
+  qa: Qatar
+  mk: Republic of North Macedonia
+  ro: Romania
+  ru: Russian Federation (the)
+  rw: Rwanda
+  re: Réunion
+  bl: Saint Barthélemy
+  sh: Saint Helena, Ascension and Tristan da Cunha
+  kn: Saint Kitts and Nevis
+  lc: Saint Lucia
+  mf: Saint Martin (French part)
+  pm: Saint Pierre and Miquelon
+  vc: Saint Vincent and the Grenadines
+  ws: Samoa
+  sm: San Marino
+  st: Sao Tome and Principe
+  sa: Saudi Arabia
+  sn: Senegal
+  rs: Serbia
+  sc: Seychelles
+  sl: Sierra Leone
+  sg: Singapore
+  sx: Sint Maarten (Dutch part)
+  sk: Slovakia
+  si: Slovenia
+  sb: Solomon Islands
+  so: Somalia
+  za: South Africa
+  gs: South Georgia and the South Sandwich Islands
+  ss: South Sudan
+  es: Spain
+  lk: Sri Lanka
+  sd: Sudan (the)
+  sr: Suriname
+  sj: Svalbard and Jan Mayen
+  se: Sweden
+  ch: Switzerland
+  sy: Syrian Arab Republic
+  tw: Taiwan (Province of China)
+  tj: Tajikistan
+  tz: Tanzania, United Republic of
+  th: Thailand
+  tl: Timor-Leste
+  tg: Togo
+  tk: Tokelau
+  to: Tonga
+  tt: Trinidad and Tobago
+  tn: Tunisia
+  tr: Turkey
+  tm: Turkmenistan
+  tc: Turks and Caicos Islands (the)
+  tv: Tuvalu
+  ug: Uganda
+  ua: Ukraine
+  ae: United Arab Emirates (the)
+  gb: United Kingdom of Great Britain and Northern Ireland (the)
+  um: United States Minor Outlying Islands (the)
+  us: United States of America (the)
+  uy: Uruguay
+  uz: Uzbekistan
+  vu: Vanuatu
+  ve: Venezuela (Bolivarian Republic of)
+  vn: Viet Nam
+  vg: Virgin Islands (British)
+  vi: Virgin Islands (U.S.)
+  wf: Wallis and Futuna
+  eh: Western Sahara
+  ye: Yemen
+  zm: Zambia
+  zw: Zimbabwe
+  ax: Åland Islands
+
+currency:
+  aed: UAE Dirham
+  afn: Afghani
+  all: Lek
+  amd: Armenian Dram
+  ang: Netherlands Antillean Guilder
+  aoa: Kwanza
+  ars: Argentine Peso
+  aud: Australian Dollar
+  awg: Aruban Florin
+  azn: Azerbaijanian Manat
+  bam: Convertible Mark
+  bbd: Barbados Dollar
+  bdt: Taka
+  bgn: Bulgarian Lev
+  bhd: Bahraini Dinar
+  bif: Burundi Franc
+  bmd: Bermudian Dollar
+  bnd: Brunei Dollar
+  bob: Boliviano
+  bov: Mvdol
+  brl: Brazilian Real
+  bsd: Bahamian Dollar
+  btn: Ngultrum
+  bwp: Pula
+  byn: Belarussian Ruble
+  bzd: Belize Dollar
+  cad: Canadian Dollar
+  cdf: Congolese Franc
+  che: WIR Euro
+  chf: Swiss Franc
+  chw: WIR Franc
+  clf: Unidad de Fomento
+  clp: Chilean Peso
+  cny: Yuan Renminbi
+  cop: Colombian Peso
+  cou: Unidad de Valor Real
+  crc: Costa Rican Colon
+  cuc: Peso Convertible
+  cup: Cuban Peso
+  cve: Cabo Verde Escudo
+  czk: Czech Koruna
+  djf: Djibouti Franc
+  dkk: Danish Krone
+  dop: Dominican Peso
+  dzd: Algerian Dinar
+  egp: Egyptian Pound
+  ern: Nakfa
+  etb: Ethiopian Birr
+  eur: Euro
+  fjd: Fiji Dollar
+  fkp: Falkland Islands Pound
+  gbp: Pound Sterling
+  gel: Lari
+  ghs: Ghana Cedi
+  gip: Gibraltar Pound
+  gmd: Dalasi
+  gnf: Guinea Franc
+  gtq: Quetzal
+  gyd: Guyana Dollar
+  hkd: Hong Kong Dollar
+  hnl: Lempira
+  hrk: Kuna
+  htg: Gourde
+  huf: Forint
+  idr: Rupiah
+  ils: New Israeli Sheqel
+  inr: Indian Rupee
+  iqd: Iraqi Dinar
+  irr: Iranian Rial
+  isk: Iceland Krona
+  jmd: Jamaican Dollar
+  jod: Jordanian Dinar
+  jpy: Yen
+  kes: Kenyan Shilling
+  kgs: Som
+  khr: Riel
+  kmf: Comoro Franc
+  kpw: North Korean Won
+  krw: Won
+  kwd: Kuwaiti Dinar
+  kyd: Cayman Islands Dollar
+  kzt: Tenge
+  lak: Kip
+  lbp: Lebanese Pound
+  lkr: Sri Lanka Rupee
+  lrd: Liberian Dollar
+  lsl: Loti
+  lyd: Libyan Dinar
+  mad: Moroccan Dirham
+  mdl: Moldovan Leu
+  mga: Malagasy Ariary
+  mkd: Denar
+  mmk: Kyat
+  mnt: Tugrik
+  mop: Pataca
+  mru: Ouguiya
+  mur: Mauritius Rupee
+  mvr: Rufiyaa
+  mwk: Kwacha
+  mxn: Mexican Peso
+  mxv: Mexican Unidad de Inversion
+  myr: Malaysian Ringgit
+  mzn: Mozambique Metical
+  nad: Namibia Dollar
+  ngn: Naira
+  nio: Cordoba Oro
+  nok: Norwegian Krone
+  npr: Nepalese Rupee
+  nzd: New Zealand Dollar
+  omr: Rial Omani
+  pab: Balboa
+  pen: Nuevo Sol
+  pgk: Kina
+  php: Philippine Peso
+  pkr: Pakistan Rupee
+  pln: Zloty
+  pyg: Guarani
+  qar: Qatari Rial
+  ron: Romanian Leu
+  rsd: Serbian Dinar
+  rub: Russian Ruble
+  rwf: Rwanda Franc
+  sar: Saudi Riyal
+  sbd: Solomon Islands Dollar
+  scr: Seychelles Rupee
+  sdg: Sudanese Pound
+  sek: Swedish Krona
+  sgd: Singapore Dollar
+  shp: Saint Helena Pound
+  sle: Leone
+  sos: Somali Shilling
+  srd: Surinam Dollar
+  ssp: South Sudanese Pound
+  stn: Dobra
+  svc: El Salvador Colon
+  syp: Syrian Pound
+  szl: Lilangeni
+  thb: Baht
+  tjs: Somoni
+  tmt: Turkmenistan New Manat
+  tnd: Tunisian Dinar
+  top: Pa’anga
+  try: Turkish Lira
+  ttd: Trinidad and Tobago Dollar
+  twd: New Taiwan Dollar
+  tzs: Tanzanian Shilling
+  uah: Hryvnia
+  ugx: Uganda Shilling
+  usd: US Dollar
+  uyi: Uruguay Peso
+  uyu: Peso Uruguayo
+  uzs: Uzbekistan Sum
+  ved: Bolivar
+  vef: Bolivar
+  ves: Venezuelan Bolívar
+  vnd: Dong
+  vuv: Vatu
+  wst: Tala
+  xaf: CFA Franc BEAC
+  xcd: East Caribbean Dollar
+  xdr: SDR
+  xof: CFA Franc BCEAO
+  xpf: CFP Franc
+  xsu: Sucre
+  xua: ADB Unit of Account
+  yer: Yemeni Rial
+  zar: Rand
+  zmw: Zambian Kwacha
+  zwl: Zimbabwe Dollar
+
+error:
+  message: "Something went wrong 😅\nPlease check your internet connection."
+  retry: "Retry"
+
+msg:
+  updated: "Your Rates Are Up To Date Again"
+  setCurrenciesError: "An Error Happened."

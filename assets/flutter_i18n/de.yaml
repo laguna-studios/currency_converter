@@ -1,0 +1,440 @@
+title: Währungsrechner
+like: App bewerten
+get_pro: Pro-Version
+contact: Kontakt
+terms: Nutzungsbedingungen
+privacy: Datenschutzbestimmungen
+about: Über
+overview: Übersicht
+refresh: Zuletzt aktualisiert am
+searchHint: "Suche nach Währung oder Land"
+termsUrl: "https://seniorlaguna.github.io/currency_calculator/terms_de.html"
+privacyUrl: "https://seniorlaguna.github.io/currency_calculator/terms_de.html"
+contactUrl: "https://seniorlaguna.github.io/contact.html"
+country:
+  af: Afghanistan
+  al: Albanien
+  dz: Algerien
+  as: Amerikanisch-Samoa
+  ad: Andorra
+  ao: Angola
+  ai: Anguilla
+  aq: Antarktis
+  ag: Antigua und Barbuda
+  ar: Argentinien
+  am: Armenien
+  aw: Aruba
+  au: Australien
+  at: Österreich
+  az: Aserbaidschan
+  bs: Bahamas (die)
+  bh: Bahrain
+  bd: Bangladesch
+  bb: Barbados
+  by: Weißrussland
+  be: Belgien
+  bz: Belize
+  bj: Benin
+  bm: Bermuda
+  bt: Bhutan
+  bo: Bolivien (Plurinationaler Staat)
+  bq: Bonaire, Sint Eustatius und Saba
+  ba: Bosnien und Herzegowina
+  bw: Botswana
+  bv: Bouvetinsel
+  br: Brasilien
+  io: Britisches Territorium im Indischen Ozean (das)
+  bn: Brunei Darussalam
+  bg: Bulgarien
+  bf: Burkina Faso
+  bi: Burundi
+  cv: Cabo Verde
+  kh: Kambodscha
+  cm: Kamerun
+  ca: Kanada
+  ky: Kaimaninseln (die)
+  cf: Zentralafrikanische Republik (die)
+  td: Chad
+  cl: Chile
+  cn: China
+  cx: Weihnachtsinsel
+  cc: Cocos (Keeling) Inseln (die)
+  co: Kolumbien
+  km: Komoren (die)
+  cd: Kongo (die Demokratische Republik)
+  cg: Kongo (der)
+  ck: Cookinseln (die)
+  cr: Costa Rica
+  hr: Kroatien
+  cu: Kuba
+  cw: Curaçao
+  cy: Zypern
+  cz: Tschechische Republik
+  ci: Côte d'Ivoire
+  dk: Dänemark
+  dj: Dschibuti
+  dm: Dominica
+  do: Dominikanische Republik (die)
+  ec: Ecuador
+  eg: Ägypten
+  sv: El Salvador
+  gq: Äquatorialguinea
+  er: Eritrea
+  ee: Estland
+  sz: Eswatini
+  et: Äthiopien
+  fk: Falklandinseln (die) [Malwinen]
+  fo: Färöer Inseln (die)
+  fj: Fidschi
+  fi: Finnland
+  fr: Frankreich
+  gf: Französisch-Guayana
+  pf: Französisch-Polynesien
+  tf: Französische Südterritorien (die)
+  ga: Gabun
+  gm: Gambia (die)
+  ge: Georgien
+  de: Deutschland
+  gh: Ghana
+  gi: Gibraltar
+  gr: Griechenland
+  gl: Grönland
+  gd: Grenada
+  gp: Guadeloupe
+  gu: Guam
+  gt: Guatemala
+  gg: Guernsey
+  gn: Guinea
+  gw: Guinea-Bissau
+  gy: Guyana
+  ht: Haiti
+  hm: Heard-Insel und McDonald-Inseln
+  va: Heiliger Stuhl (der)
+  hn: Honduras
+  hk: Hongkong
+  hu: Ungarn
+  is: Island
+  in: Indien
+  id: Indonesien
+  ir: Iran (Islamische Republik)
+  iq: Irak
+  ie: Irland
+  im: Isle of Man
+  il: Israel
+  it: Italien
+  jm: Jamaika
+  jp: Japan
+  je: Jersey
+  jo: Jordanien
+  kz: Kasachstan
+  ke: Kenia
+  ki: Kiribati
+  kp: Korea (die Demokratische Volksrepublik)
+  kr: Korea (die Republik)
+  kw: Kuwait
+  kg: Kirgisistan
+  la: Demokratische Volksrepublik Laos (die)
+  lv: Lettland
+  lb: Libanon
+  ls: Lesotho
+  lr: Liberia
+  ly: Libyen
+  li: Liechtenstein
+  lt: Litauen
+  lu: Luxemburg
+  mo: Macao
+  mg: Madagaskar
+  mw: Malawi
+  my: Malaysia
+  mv: Malediven
+  ml: Mali
+  mt: Malta
+  mh: Marshallinseln (die)
+  mq: Martinique
+  mr: Mauretanien
+  mu: Mauritius
+  yt: Mayotte
+  mx: Mexiko
+  fm: Mikronesien (Föderierte Staaten von)
+  md: Moldawien (die Republik)
+  mc: Monaco
+  mn: Mongolei
+  me: Montenegro
+  ms: Montserrat
+  ma: Marokko
+  mz: Mosambik
+  mm: Myanmar
+  na: Namibia
+  nr: Nauru
+  np: Nepal
+  nl: Niederlande (die)
+  nc: Neukaledonien
+  nz: Neuseeland
+  ni: Nicaragua
+  ne: Niger (der)
+  ng: Nigeria
+  nu: Niue
+  nf: Norfolkinsel
+  mp: Nördliche Marianen (die)
+  no: Norwegen
+  om: Oman
+  pk: Pakistan
+  pw: Palau
+  ps: Palästina, Staat
+  pa: Panama
+  pg: Papua-Neuguinea
+  py: Paraguay
+  pe: Peru
+  ph: Philippinen (die)
+  pn: Pitcairn
+  pl: Polen
+  pt: Portugal
+  pr: Puerto Rico
+  qa: Katar
+  mk: Republik Nord-Mazedonien
+  ro: Rumänien
+  ru: Russische Föderation (die)
+  rw: Ruanda
+  re: Réunion
+  bl: St. Barthélemy
+  sh: St. Helena, Himmelfahrt und Tristan da Cunha
+  kn: St. Kitts und Nevis
+  lc: St. Lucia
+  mf: St. Martin (französischer Teil)
+  pm: St. Pierre und Miquelon
+  vc: St. Vincent und die Grenadinen
+  ws: Samoa
+  sm: San Marino
+  st: Sao Tome und Principe
+  sa: Saudi-Arabien
+  sn: Senegal
+  rs: Serbien
+  sc: Seychellen
+  sl: Sierra Leone
+  sg: Singapur
+  sx: Sint Maarten (Niederländischer Teil)
+  sk: Slowakei
+  si: Slowenien
+  sb: Salomoninseln
+  so: Somalia
+  za: Südafrika
+  gs: Südgeorgien und die Südlichen Sandwichinseln
+  ss: Südsudan
+  es: Spanien
+  lk: Sri Lanka
+  sd: Sudan (der)
+  sr: Surinam
+  sj: Svalbard und Jan Mayen
+  se: Schweden
+  ch: Schweiz
+  sy: Arabische Republik Syrien
+  tw: Taiwan (Provinz von China)
+  tj: Tadschikistan
+  tz: Tansania, Vereinigte Republik
+  th: Thailand
+  tl: Timor-Leste
+  tg: Togo
+  tk: Tokelau
+  to: Tonga
+  tt: Trinidad und Tobago
+  tn: Tunesien
+  tr: Türkei
+  tm: Turkmenistan
+  tc: Turks- und Caicosinseln (die)
+  tv: Tuvalu
+  ug: Uganda
+  ua: Ukraine
+  ae: Vereinigte Arabische Emirate (die)
+  gb: Vereinigtes Königreich von Großbritannien und Nordirland (das)
+  um: United States Minor Outlying Islands (die)
+  us: Vereinigte Staaten von Amerika (die)
+  uy: Uruguay
+  uz: Usbekistan
+  vu: Vanuatu
+  ve: Venezuela (Bolivarische Republik)
+  vn: Vietnam
+  vg: Jungferninseln (Britisch)
+  vi: Jungferninseln (U.S.)
+  wf: Wallis und Futuna
+  eh: Westsahara
+  ye: Jemen
+  zm: Sambia
+  zw: Simbabwe
+  ax: Åland-Inseln
+currency:
+  aed: UAE Dirham
+  afn: Afghanisch
+  all: Lek
+  amd: Armenisches Drama
+  ang: Niederländisch-Antillischer Gulden
+  aoa: Kwanza
+  ars: Argentinischer Peso
+  aud: Australischer Dollar
+  awg: Arubischer Florin
+  azn: Aserbaidschanischer Manat
+  bam: Cabrio-Marke
+  bbd: Barbados-Dollar
+  bdt: Taka
+  bgn: Bulgarisch Lev
+  bhd: Bahraini-Dinar
+  bif: Burundi-Franc
+  bmd: Bermudischer Dollar
+  bnd: Brunei-Dollar
+  bob: Bolivien
+  bov: Mvdol
+  brl: Brasilianischer Real
+  bsd: Bahama-Dollar
+  btn: Ngultrum
+  bwp: Pula
+  byn: Weißrussischer Rubel
+  bzd: Belize-Dollar
+  cad: Kanadischer Dollar
+  cdf: Kongolesischer Franc
+  che: WIR Euro
+  chf: Schweizer Franken
+  chw: WIR-Frank
+  clf: Unidad de Fomento
+  clp: Chilenischer Peso
+  cny: Yuan Renminbi
+  cop: Kolumbianischer Peso
+  cou: Unidad de Valor Real
+  crc: Costa-Rica-Kolon
+  cuc: Peso Cabrio
+  cup: Kubanischer Peso
+  cve: Cabo Verde Escudo
+  czk: Tschechische Krone
+  djf: Dschibuti-Franc
+  dkk: Dänische Krone
+  dop: Dominikanischer Peso
+  dzd: Algerischer Dinar
+  egp: Ägyptisches Pfund
+  ern: Nakfa
+  etb: Äthiopische Birr
+  eur: Euro
+  fjd: Fidschi-Dollar
+  fkp: Falklandinseln Pfund
+  gbp: Pfund Sterling
+  gel: Lari
+  ghs: Ghanaischer Zedi
+  gip: Gibraltar-Pfund
+  gmd: Dalasi
+  gnf: Guinea-Franc
+  gtq: Quetzal
+  gyd: Guyana-Dollar
+  hkd: Hongkong-Dollar
+  hnl: Lempira
+  hrk: Kuna
+  htg: Gourde
+  huf: Forint
+  idr: Rupiah
+  ils: Neuer israelischer Sheqel
+  inr: Indische Rupie
+  iqd: Irakischer Dinar
+  irr: Iranischer Rial
+  isk: Island Krone
+  jmd: Jamaikanischer Dollar
+  jod: Jordanischer Dinar
+  jpy: Yen
+  kes: Kenia-Schilling
+  kgs: Som
+  khr: Riel
+  kmf: Komorenfrankreich
+  kpw: Nordkoreanischer Won
+  krw: Won
+  kwd: Kuwaitischer Dinar
+  kyd: Kaimaninseln Dollar
+  kzt: Tenge
+  lak: Kip
+  lbp: Libanesisches Pfund
+  lkr: Sri Lanka-Rupie
+  lrd: Liberianischer Dollar
+  lsl: Loti
+  lyd: Libyscher Dinar
+  mad: Marokkanischer Dirham
+  mdl: Moldawischer Leu
+  mga: Madagaskarariary
+  mkd: Denar
+  mmk: Kyat
+  mnt: Tugrik
+  mop: Pataca
+  mru: Ouguiya
+  mur: Mauritius-Rupie
+  mvr: Rufiyaa
+  mwk: Kwacha
+  mxn: Mexikanischer Peso
+  mxv: Mexikanische Unidad de Inversion
+  myr: Malaysischer Ringgit
+  mzn: Mosambik Metical
+  nad: Namibia-Dollar
+  ngn: Naira
+  nio: Cordoba Oro
+  nok: Norwegische Krone
+  npr: Nepalesische Rupie
+  nzd: Neuseeländischer Dollar
+  omr: Omanischer Rial
+  pab: Balboa
+  pen: Nuevo Sol
+  pgk: Kina
+  php: Philippinischer Peso
+  pkr: Pakistanische Rupie
+  pln: Zloty
+  pyg: Guarani
+  qar: Katarer Rial
+  ron: Rumänischer Leu
+  rsd: Serbischer Dinar
+  rub: Russischer Rubel
+  rwf: Ruanda-Franc
+  sar: Saudi Riyal
+  sbd: Salomonen-Dollar
+  scr: Seychellen-Rupie
+  sdg: Sudanesisches Pfund
+  sek: Schwedische Krone
+  sgd: Singapur-Dollar
+  shp: St. Helena Pfund
+  sle: Leone
+  sos: Somali-Schilling
+  srd: Surinam-Dollar
+  ssp: Südsudanesisches Pfund
+  stn: Dobra
+  svc: El Salvador Kolon
+  syp: Syrisches Pfund
+  szl: Lilangeni
+  thb: Baht
+  tjs: Somoni
+  tmt: Turkmenistan Neuer Manat
+  tnd: Tunesischer Dinar
+  top: Pa'anga
+  try: Türkische Lira
+  ttd: Trinidad und Tobago Dollar
+  twd: Neuer Taiwan-Dollar
+  tzs: Tansanischer Schilling
+  uah: Griwna
+  ugx: Uganda-Schilling
+  usd: US Dollar
+  uyi: Uruguay Peso
+  uyu: Peso Uruguayo
+  uzs: Usbekistan Summe
+  ved: Bolivar
+  vef: Bolivar
+  ves: Venezolanischer Bolívar
+  vnd: Dong
+  vuv: Vatu
+  wst: Tala
+  xaf: CFA-Franc BEAC
+  xcd: Ostkaribischer Dollar
+  xdr: SDR
+  xof: CFA-Franc BCEAO
+  xpf: CFP-Frank
+  xsu: Sucre
+  xua: ADB-Rechnungseinheit
+  yer: Jemenitischer Rial
+  zar: Rand
+  zmw: Sambische Kwacha
+  zwl: Simbabwe-Dollar
+error:
+  message: "Da ist was schiefgelaufen 😅\nÜberprüfe bitte deine Internetverbindung."
+  retry: "Nochmal"
+
+msg:
+  updated: "Deine Wechselkurse sind wieder aktuell"
+  setCurrenciesError: "Da ist was schiefgelaufen"
