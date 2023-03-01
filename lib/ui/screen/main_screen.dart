@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:currency_calculator/bloc/ads_cubit.dart';
 import 'package:currency_calculator/bloc/app_cubit.dart';
 import 'package:currency_calculator/bloc/currency_selection_cubit.dart';
@@ -384,17 +386,17 @@ class AppDrawer extends StatelessWidget {
             child: Image.asset("assets/store/icon_round_1000.png",
                 fit: BoxFit.cover),
           ),
-          ListTile(
+          if (Platform.isAndroid) ListTile(
             leading: const Icon(Icons.favorite),
             title: Text(FlutterI18n.translate(context, "like")),
             onTap: openLikeUrl,
           ),
-          ListTile(
+          if (Platform.isAndroid) ListTile(
             leading: const Icon(Icons.workspace_premium),
             title: Text(FlutterI18n.translate(context, "get_pro")),
             onTap: openProVersionUrl,
           ),
-          const Divider(),
+          if (Platform.isAndroid) const Divider(),
           ListTile(
             leading: const Icon(Icons.contact_mail),
             title: Text(FlutterI18n.translate(context, "contact")),
@@ -417,7 +419,7 @@ class AppDrawer extends StatelessWidget {
             onTap: () => showAboutDialog(
               context: context,
               applicationName: FlutterI18n.translate(context, "title"),
-              applicationVersion: "1.0",
+              applicationVersion: "1.0.0",
             ),
           ),
         ],
