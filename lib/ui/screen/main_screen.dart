@@ -16,8 +16,32 @@ import '../widget/flag.dart';
 
 const int startupsBeforeReview = 4;
 
-class MainScreen extends StatelessWidget {
+class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
+
+  @override
+  State<MainScreen> createState() => _MainScreenState();
+}
+
+class _MainScreenState extends State<MainScreen> with WidgetsBindingObserver {
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state != AppLifecycleState.resumed) return;
+    AdsCubit.of(context).showInterstitial(appResumed: true);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -193,7 +217,7 @@ class LoadedPage extends StatelessWidget {
                   ),
                 ),
                  const SizedBox(height: 28,),
-                Text(
+                const Text(
                   "≈",
                   style: TextStyle(fontSize: 20),
                 )
@@ -233,7 +257,7 @@ class LoadedPage extends StatelessWidget {
         const SizedBox(height: 12,),
         Text(
           FlutterI18n.translate(context, "overview"),
-          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+          style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
         ),
         Expanded(
           flex: 8,
@@ -248,16 +272,16 @@ class LoadedPage extends StatelessWidget {
                       Text(
                         from.id.toUpperCase(),
                         textAlign: TextAlign.center,
-                        style: TextStyle(fontSize: 16),
+                        style: const TextStyle(fontSize: 16),
                       ),
                       Text(to.id.toUpperCase(),
                           textAlign: TextAlign.center,
-                          style: TextStyle(fontSize: 16))
+                          style: const TextStyle(fontSize: 16))
                     ],
                   ),
                   ...[
                     for (double i in from.bills) ...[
-                      Divider(),
+                      const Divider(),
                       Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
@@ -326,12 +350,12 @@ class ErrorPage extends StatelessWidget {
             padding: const EdgeInsets.all(16.0),
             child: Text(
               FlutterI18n.translate(context, "error.message"),
-              style: TextStyle(fontSize: 16),
+              style: const TextStyle(fontSize: 16),
               textAlign: TextAlign.center,
             ),
           ),
           OutlinedButton.icon(
-            icon: Icon(Icons.refresh),
+            icon: const Icon(Icons.refresh),
             onPressed: () {
               AppCubit.of(context).load();
             },
@@ -354,11 +378,11 @@ class AppDrawer extends StatelessWidget {
       child: ListView(
         children: [
           DrawerHeader(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
                 boxShadow: [BoxShadow(offset: Offset(0, 4), blurRadius: 4)]),
+            padding: EdgeInsets.zero,
             child: Image.asset("assets/store/icon_round_1000.png",
                 fit: BoxFit.cover),
-            padding: EdgeInsets.zero,
           ),
           ListTile(
             leading: const Icon(Icons.favorite),

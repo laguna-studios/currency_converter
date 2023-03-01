@@ -51,7 +51,8 @@ void main() async {
       .setDefaults(const {
         "banner" : false,
         "interstitial" : false,
-        "interstitial_rate" : 2
+        "interstitial_rate" : 2,
+        "interstitial_on_resume" : false
       });
 
   // AdMob

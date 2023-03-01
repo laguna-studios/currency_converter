@@ -11,6 +11,7 @@ class AdsCubit extends Cubit<bool> {
   final bool releaseMode;
   int showInterstitialCount = 0;
   late int interstitialRate;
+  late bool interstitialOnResume;
 
   AdsCubit(super.initialState, {this.releaseMode = false});
   BannerAd? banner;
@@ -24,6 +25,7 @@ class AdsCubit extends Cubit<bool> {
     }
     
     interstitialRate = FirebaseRemoteConfig.instance.getInt("interstitial_rate");
+    interstitialOnResume = FirebaseRemoteConfig.instance.getBool("interstitial_on_resume");
 
     if (FirebaseRemoteConfig.instance.getBool("banner")) {
         _initBanner();
@@ -65,7 +67,10 @@ class AdsCubit extends Cubit<bool> {
         ));
   }
 
-  Future<void> showInterstitial() async {
+  Future<void> showInterstitial({bool appResumed = false}) async {
+    // dont show interstitial on app resume
+    if (appResumed && !interstitialOnResume) return;
+
     if (_interstitialAd != null) {
 
       // dont show ads every time
