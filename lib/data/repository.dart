@@ -13,8 +13,8 @@ abstract class DataProvider<T> {
 }
 
 abstract class BaseRepository {
-  Future<Rates?> getRates();
-  Future<Iterable<Currency>?> getCurrencies();
+  Future<Rates?> getRates({Duration maxCacheAge = const Duration(hours: 1)});
+  Future<Iterable<Currency>?> getCurrencies({Duration maxCacheAge = const Duration(days: 1)});
 }
 
 /// implementations
@@ -90,12 +90,12 @@ class AppRepository extends BaseRepository {
   }
 
   @override
-  Future<Rates?> getRates() async {
-    return _getData<Rates>(provider: ratesProvider, maxAge: const Duration(hours: 1));
+  Future<Rates?> getRates({Duration maxCacheAge = const Duration(hours: 1)}) async {
+    return _getData<Rates>(provider: ratesProvider, maxAge: maxCacheAge);
   }
 
   @override
-  Future<Iterable<Currency>?> getCurrencies() {
-    return _getData<Iterable<Currency>>(provider: currencyProvider, maxAge: const Duration(days: 30));
+  Future<Iterable<Currency>?> getCurrencies({Duration maxCacheAge = const Duration(days: 1)}) {
+    return _getData<Iterable<Currency>>(provider: currencyProvider, maxAge: maxCacheAge);
   }
 }

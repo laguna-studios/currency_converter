@@ -54,7 +54,7 @@ class _MainScreenState extends State<MainScreen>{
                 return IconButton(
                     onPressed: state.uiState == AppUIState.loaded
                         ? AppCubit.of(context).update
-                        : AppCubit.of(context).load,
+                        : () => AppCubit.of(context).load(useCache: false),
                     icon: const Icon(Icons.refresh));
               })
             ],
@@ -341,7 +341,7 @@ class ErrorPage extends StatelessWidget {
           OutlinedButton.icon(
             icon: const Icon(Icons.refresh),
             onPressed: () {
-              AppCubit.of(context).load();
+              AppCubit.of(context).load(useCache: false);
             },
             label: Text(FlutterI18n.translate(context, "error.retry")),
           )
