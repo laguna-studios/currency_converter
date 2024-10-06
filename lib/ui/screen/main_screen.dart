@@ -373,11 +373,6 @@ class AppDrawer extends StatelessWidget {
             title: Text(FlutterI18n.translate(context, "like")),
             onTap: openLikeUrl,
           ),
-          if (Platform.isAndroid) ListTile(
-            leading: const Icon(Icons.workspace_premium),
-            title: Text(FlutterI18n.translate(context, "get_pro")),
-            onTap: openProVersionUrl,
-          ),
           if (Platform.isAndroid) const Divider(),
           ListTile(
             leading: const Icon(Icons.contact_mail),

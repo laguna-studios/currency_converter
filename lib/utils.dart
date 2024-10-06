@@ -17,14 +17,6 @@ void openLikeUrl() {
   
 }
 
-void openProVersionUrl() {
-  try {
-      openUrl("market://details?id=de.seniorlaguna.currency_calculator_pro");
-  } catch (_) {
-      openUrl("https://play.google.com/store/apps/details?id=de.seniorlaguna.currency_calculator_pro");
-  }
-}
-
 void openTermsOfUse(BuildContext context) {
   openUrl(FlutterI18n.translate(context, "termsUrl"));
 }
