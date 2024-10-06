@@ -1,6 +1,3 @@
-import 'dart:math';
-
-import 'package:currency_calculator/bloc/app_cubit.dart';
 import 'package:currency_calculator/bloc/currency_selection_cubit.dart';
 import 'package:currency_calculator/data/types.dart';
 import 'package:flutter/material.dart';

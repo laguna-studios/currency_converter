@@ -1,9 +1,4 @@
 import 'package:currency_calculator/ui/screen/main_screen.dart';
-import 'package:firebase_analytics/firebase_analytics.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_crashlytics/firebase_crashlytics.dart';
-import 'package:firebase_remote_config/firebase_remote_config.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_i18n/flutter_i18n.dart';
@@ -21,39 +16,9 @@ import 'bloc/currency_selection_cubit.dart';
 import 'bloc/review_cubit.dart';
 import 'data/repository.dart';
 import 'data/types.dart';
-import 'firebase_options.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
-  // Firebase Tools
-  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-
-  // Analytics
-  FirebaseAnalytics analytics = FirebaseAnalytics.instance;
-
-  // Crashlytics
-  FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterFatalError;
-  PlatformDispatcher.instance.onError = (error, stack) {
-    FirebaseCrashlytics.instance.recordError(error, stack, fatal: true);
-    return true;
-  };
-
-  // Remote Config
-  final remoteConfig = FirebaseRemoteConfig.instance;
-  await remoteConfig.setConfigSettings(RemoteConfigSettings(
-    fetchTimeout: const Duration(minutes: 1),
-    minimumFetchInterval: const Duration(hours: 24),
-  ));
-
-  // Set Default Values For Remote Config
-  await remoteConfig
-      .setDefaults(const {
-        "banner" : false,
-        "interstitial" : false,
-        "interstitial_rate" : 2,
-        "interstitial_on_resume" : false
-      });
 
   // AdMob
   ads.MobileAds.instance.initialize();
@@ -91,7 +56,7 @@ class CurrencyConverterApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(create: (context) => AppCubit(repository, const AppState(uiState: AppUIState.loading))..load()),
-        BlocProvider(create: (context) => AdsCubit(false, releaseMode: true)..init()),
+        BlocProvider(create: (context) => AdsCubit(false)..init()),
         BlocProvider(create: (context) => ReviewCubit(0)..init()),
         BlocProvider(lazy: false, create: (context) => CurrencySelectionCubit(repository, const CurrencySelectionState(initialized: false))),
       ],

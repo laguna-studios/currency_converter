@@ -1,6 +1,5 @@
 import 'package:currency_calculator/data/repository.dart';
 import 'package:currency_calculator/data/types.dart';
-import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
@@ -32,7 +31,6 @@ class AppCubit extends HydratedCubit<AppState> {
       int timestamp = _rates[from.id]!["date"];
       return DateTime.fromMillisecondsSinceEpoch(timestamp);
     } catch (e) {
-      FirebaseAnalytics.instance.logEvent(name: "exception", parameters: {"message": "$e"});
       throw DeveloperException("dev.getRatesDate");
     }
   }
@@ -42,7 +40,6 @@ class AppCubit extends HydratedCubit<AppState> {
       double conversionRate = _rates[from.id]![to.id];
       return conversionRate;
     } catch (e) {
-      FirebaseAnalytics.instance.logEvent(name: "exception", parameters: {"message": "$e"});
       throw DeveloperException("dev.getConversionRate");
     }
   }
