@@ -9,9 +9,9 @@ about: About
 refresh: Latest rates from
 searchHint: "Search for currency or country"
 
-termsUrl: "https://seniorlaguna.github.io/currency_calculator/terms_en.html"
-privacyUrl: "https://seniorlaguna.github.io/currency_calculator/terms_en.html"
-contactUrl: "https://seniorlaguna.github.io/contact.html"
+termsUrl: "https://lagunastudios.de/currency-converter-terms-of-use/"
+privacyUrl: "https://lagunastudios.de/currency-converter-privacy-policy/"
+contactUrl: "https://lagunastudios.de/impressum/"
 
 country:
   af: Afghanistan

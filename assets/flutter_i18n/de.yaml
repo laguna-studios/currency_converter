@@ -8,9 +8,9 @@ about: Über
 overview: Übersicht
 refresh: Zuletzt aktualisiert am
 searchHint: "Suche nach Währung oder Land"
-termsUrl: "https://seniorlaguna.github.io/currency_calculator/terms_de.html"
-privacyUrl: "https://seniorlaguna.github.io/currency_calculator/terms_de.html"
-contactUrl: "https://seniorlaguna.github.io/contact.html"
+termsUrl: "https://lagunastudios.de/waehrungsrechner-nutzungsbedingungen/"
+privacyUrl: "https://lagunastudios.de/waehrungsrechner-datenschutzerklaerung/"
+contactUrl: "https://lagunastudios.de/impressum/"
 country:
   af: Afghanistan
   al: Albanien
