@@ -32,11 +32,11 @@ void main() async {
 
   final BaseRepository repository = AppRepository(
     currencyProvider: NetworkDataProvider<Iterable<Currency>>(
-      url: "https://raw.githubusercontent.com/seniorlaguna/currency-rates-provider/main/latest/currencies.json",
+      url: "https://raw.githubusercontent.com/laguna-studios/currency-rates-provider/main/latest/currencies.json",
       fromJson: (json) => (json as List<dynamic>).map((item) => Currency.fromJson(item)),
     ),
     ratesProvider: NetworkDataProvider<Rates>(
-      url: "https://raw.githubusercontent.com/seniorlaguna/currency-rates-provider/main/latest/rates.json",
+      url: "https://raw.githubusercontent.com/laguna-studios/currency-rates-provider/main/latest/rates.json",
       fromJson: (json) => Map.from(json),
     )
   );

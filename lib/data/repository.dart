@@ -1,6 +1,5 @@
 import 'dart:convert';
 
-import 'package:currency_calculator/bloc/app_cubit.dart';
 import 'package:currency_calculator/data/types.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:http/http.dart' as http;
@@ -86,8 +85,7 @@ class AppRepository extends BaseRepository {
     else if (age > maxAge) {
       T? data = await provider.getData();
       if (data != null) return data;
-      return provider.getData(cache: true);
-    } 
+    }
     return provider.getData(cache: true);
   }
 
