@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     name: CICD
     steps:    
-      - uses: laguna-studios/fhs@bcd5b8fc3efcbaac9b0b9901d55d2caf316d8524
+      - uses: laguna-studios/fhs@fdec8fdda2cf096a6fdac4e6d664ea204c0fd22f
         with:
           keystore_base64: ${{ secrets.KEYSTORE }}
           key_properties_file: ${{ secrets.KEY_PROPERTIES }}
