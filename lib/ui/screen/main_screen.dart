@@ -55,7 +55,7 @@ class _MainScreenState extends State<MainScreen>{
                 return IconButton(
                     onPressed: state.uiState == AppUIState.loaded
                         ? AppCubit.of(context).update
-                        : () => AppCubit.of(context).load(useCache: false),
+                        : null,
                     icon: const Icon(Icons.refresh));
               })
             ],

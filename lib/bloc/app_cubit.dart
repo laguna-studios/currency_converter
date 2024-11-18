@@ -59,13 +59,9 @@ class AppCubit extends HydratedCubit<AppState> {
   Future<void> load({bool useCache = true}) async {
     try {
       emit(state.copyWith(uiState: AppUIState.loading));
-      if (useCache) {
-        _currencies = (await repository.getCurrencies())!;
-        _rates = (await repository.getRates())!;
-      } else {
-        _currencies = (await repository.getCurrencies(maxCacheAge: Duration.zero))!;
-        _rates = (await repository.getRates(maxCacheAge: Duration.zero))!;
-      }
+      _currencies = (await repository.getCurrencies(maxCacheAge: Duration.zero))!;
+      _rates = (await repository.getRates(maxCacheAge: Duration.zero))!;
+      
 
       // load initial values
       Currency from =
@@ -93,7 +89,7 @@ class AppCubit extends HydratedCubit<AppState> {
     try {
       assert(state.uiState == AppUIState.loaded);
       emit(state.copyWith(uiState: AppUIState.updating));
-      _rates = (await repository.getRates())!;
+      _rates = (await repository.getRates(maxCacheAge: Duration.zero))!;
 
       // update values
       double conversionRate = _getConversionRate(from: state.from!, to: state.to!);
