@@ -12,6 +12,7 @@ import 'package:flutter_i18n/flutter_i18n.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart' as ads;
 import 'package:in_app_review/in_app_review.dart';
 import 'package:intl/intl.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 
 import '../../bloc/review_cubit.dart';
 import '../widget/flag.dart';
@@ -393,11 +394,17 @@ class AppDrawer extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.person),
             title: Text(FlutterI18n.translate(context, "about")),
-            onTap: () => showAboutDialog(
+            onTap: () async {
+              final PackageInfo packageInfo = await PackageInfo.fromPlatform();
+              if (!context.mounted) return;
+
+              showAboutDialog(
               context: context,
               applicationName: FlutterI18n.translate(context, "title"),
-              applicationVersion: "1.0.0",
-            ),
+              applicationVersion: "Version: ${packageInfo.version}+${packageInfo.buildNumber}",
+              
+            );
+            },
           ),
         ],
       ),
