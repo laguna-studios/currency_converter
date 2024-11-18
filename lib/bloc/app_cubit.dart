@@ -36,6 +36,8 @@ class AppCubit extends HydratedCubit<AppState> {
   }
 
   double _getConversionRate({required Currency from, required Currency to}) {
+    if (from == to) return 1;
+
     try {
       double conversionRate = _rates[from.id]![to.id];
       return conversionRate;
