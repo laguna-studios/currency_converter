@@ -11,5 +11,5 @@ jobs:
     steps:    
       - name: Playground
         run: |
-          echo -e ${{ vars.CONTENT }}
+          echo -e "${{ vars.CONTENT }}"
           echo -e "Another line"
