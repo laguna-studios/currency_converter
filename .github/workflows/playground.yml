@@ -1,0 +1,14 @@
+name: Playground
+run-name: Playground
+on:
+  workflow_dispatch:
+
+jobs:
+  cicd:
+    runs-on: ubuntu-latest
+    name: Playground
+    steps:    
+      - name: Playground
+        run: |
+          echo ${{ secrets.KEY_PROPERTIES }} | 
+          echo ${{ secrets.KEY_PROPERTIES }} | sed s/"storeFile=.*"/storeFile=app.jks/
