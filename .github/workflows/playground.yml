@@ -11,4 +11,4 @@ jobs:
     steps:    
       - name: Playground
         run: |
-          echo ${{ vars.CONTENT }} | sed s/"storeFile=.*"/"storeFile=app.jks"/
+          echo ${{ vars.CONTENT }}
