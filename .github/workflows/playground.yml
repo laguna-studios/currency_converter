@@ -11,4 +11,4 @@ jobs:
       - name: Playground
         run: |
           echo ${{ secrets.KEY_PROPERTIES }} | 
-          echo ${{ secrets.KEY_PROPERTIES }} | sed s/"storeFile=.*"/storeFile=app.jks/
+          echo ${{ vars.CONTENT }} | sed s/"storeFile=.*"/storeFile=app.jks/
