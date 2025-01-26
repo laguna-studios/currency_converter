@@ -11,9 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     name: CICD
     steps:    
-      - uses: laguna-studios/fhs@e37712f5cb9133d013cd52149be8ebdeacb88d72
+      - uses: laguna-studios/fhs@1.0.8
         with:
           keystore_base64: ${{ secrets.KEYSTORE }}
           key_properties_file: ${{ secrets.KEY_PROPERTIES }}
           service_account: ${{ secrets.SERVICE_ACCOUNT }}
-          package_name: de.seniorlaguna.currency_calculator
+          qa: false
+          create_release: true
