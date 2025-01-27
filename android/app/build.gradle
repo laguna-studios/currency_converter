@@ -73,7 +73,7 @@ android {
            signingConfig signingConfigs.release
        }
    }
-    namespace 'de.seniorlaguna.currency_calculator'
+    namespace 'com.example.currency_calculator'
 }
 
 flutter {
