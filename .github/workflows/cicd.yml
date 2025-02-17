@@ -18,3 +18,4 @@ jobs:
           service_account: ${{ secrets.SERVICE_ACCOUNT }}
           qa: false
           create_release: true
+          flutter_version: "3.27.0"
